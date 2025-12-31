@@ -12,7 +12,7 @@ const encodePassword = (raw) => {
 };
 
 
-//
+// Function to match a raw password with an encoded password
 const matchPassword = (raw, encoded) => {
     console.log("trying to match password", raw, encoded);
     try {

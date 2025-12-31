@@ -13,7 +13,7 @@ const decodeToken = (token) => {
 };
 
 const encodeToken = (payload) => {
-  const secret = process.env.TOKEN_SECRET;
+  const secret = process.env.ACCESS_TOKEN_SECRET;
   return sign(payload, secret, { expiresIn: "1h" });
 };
 
